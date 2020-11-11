@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    min-height: 21.875rem;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f82f73e8-9f41-4fc1-ba4c-736ceee6b58c/dcobh02-36f4eb8e-3be1-4218-bcf9-ec5e8657af5c.png/v1/fill/w_1099,h_727,q_70,strp/countryside_anime_background_practice_by_anemielle_dcobh02-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDU5IiwicGF0aCI6IlwvZlwvZjgyZjczZTgtOWY0MS00ZmMxLWJhNGMtNzM2Y2VlZTZiNThjXC9kY29iaDAyLTM2ZjRlYjhlLTNiZTEtNDIxOC1iY2Y5LWVjNWU4NjU3YWY1Yy5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.iwYUNjbQ3k0eiOSuGG4VCLtv7-kmJTrwJxWL_jS6Au4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header > * {
+    z-index: 1;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000B3;
+}
+
+.profile-image{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-image: url(https://images.alphacoders.com/598/598847.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-name{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtext{
+    padding-top: 0.5rem;
+}
+
+.main{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    max-width: 46.875rem;
+    min-width: 37.5rem;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.post{
+    display: flex;
+    border: 0.0625rem solid #eaecee;
+    border-radius: 0.5rem;
+    margin-top: 0.625rem;
+    min-height: 12.5rem;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.post:hover{
+    transform: translate3d(0,-0.3125rem,0);
+    box-shadow: 0 2rem 5rem 0 #0000001A;
+}
+
+.post-image{
+    /* background-image: url(https://c402277.ssl.cf1.rackcdn.com/photos/18315/images/hero_small/Medium_WW230176.jpg?1576168323); */
+    background-size: cover;
+    background-position: center;
+    flex-basis: 40%;
+}
+
+.post-content{
+    flex-basis: 60%;
+    padding: 1.5rem;
+}
+
+.post-content-date{
+    font-size: 0.75rem;
+    color: #adb5bd;
+    font-weight: 600;
+}
+
+.post-content-title{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.post-content-content{
+    margin-top: 0.25rem;
+    color: #495057;
+    font-weight: 400;
+    line-height: 1.4;
+    max-height: 4.0625rem;
+    overflow: hidden;
+}
+
+.new-post{
+    background-color: #004186;;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease;
+    box-shadow: 0 0.125rem 0.3125rem 0 #00000042;
+    position: fixed;
+    bottom: 1.875rem;
+    right: 1.875rem;
+}
+
+.new-post > a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.new-post:hover{
+    background-color: #002349;
+}
+
+span{
+    margin: 0;
+    background-color: red;
+}
+
+.main-container > div > a{
+    text-decoration: none;
+}

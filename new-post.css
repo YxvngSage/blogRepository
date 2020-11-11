@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    min-height: 10rem;
+    background-color: #3705ff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: absolute;
+    width: 100vw;
+    padding-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-link, .title-input, .content-textarea, .select-file{
+    margin-bottom: 0.5rem;
+}
+
+.title-input > input{
+    padding: 0.3125rem;
+    width: 20rem;
+    outline: none;
+}
+
+.content-textarea > textarea{
+    padding: 0.5rem;
+    outline: none;
+}
+
+.back-link > a{
+    text-decoration: none;
+}
+
+.back-link{
+    padding: 0.25rem;
+    border: 0.0625rem solid #000000;
+    width: fit-content;
+}
